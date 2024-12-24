@@ -1,4 +1,4 @@
 # ignore folders .vagrant
 .vagrant
-config
+configs
 metallb
