@@ -15,3 +15,9 @@ https://github.com/lacoski/kubernetes-note/blob/main/docs/setup/install-metallb.
 Attemption: make sure all nodes in K8s cluster have the same with the ip range that have defined in Metallb configuration
     Ex: if Nodes have ip: 10.0.0.x
     should define ip range: 10.0.0.50-10.0.0.60
+
+To access cluster from local machines, need to copy .kube/config from master node to ~/.kube/cofig
+- Find the Vagrant private key location:
+    vagrant ssh-config
+- Use scp with the private key:
+    scp -i /path/to/private/key -P 2222 vagrant@127.0.0.1:/home/vagrant/.kube/config ~/.kube/config
