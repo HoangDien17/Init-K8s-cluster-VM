@@ -21,3 +21,5 @@ To access cluster from local machines, need to copy .kube/config from master nod
     vagrant ssh-config
 - Use scp with the private key:
     scp -i /path/to/private/key -P 2222 vagrant@127.0.0.1:/home/vagrant/.kube/config ~/.kube/config
+- In local, set up env variable: 
+    export KUBECONFIG=~/.kube/config
