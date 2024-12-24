@@ -1,0 +1,4 @@
+# ignore folders .vagrant
+.vagrant
+config
+metallb
